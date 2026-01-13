@@ -60,5 +60,13 @@ ImportError: no pq wrapper available.
      ```bash
      $ conda install -c conda-forge pgcli
      ```
+---
+## Alternative for Venv using UV on MacOS with Python 3.13
+
+1. **Ensure you are in your working directory eg. pipeline**
+2. **Add psycopg binary**
+   ```bash
+   $ uv add "psycopg[binary]"
+   ```
 
 If you follow these steps, you should be able to resolve the issue.
